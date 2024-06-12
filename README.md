@@ -1,8 +1,8 @@
 # Socket Programming Project
 
 ## Overview
-This project demonstrates socket programming in C. It includes a client and server implementation.
-It uses a TCP/IP connection between the client and the server.
+This project demonstrates socket programming in C. It includes a client and server implementation. It uses a TCP/IP connection between the client and the server.
+This was made as a university project.
 
 ### Server
 The server checks if there's more than 5gb available for stability reasons. 
@@ -39,4 +39,4 @@ This code was run and tested on Arch linux with GCC. I can't guarantee that it w
 
 
 ## Shortcomings
-The major drawbacks of this implementation is mostly that it expects everything to be on very specific directories and very specific filenames
+The major drawbacks of this implementation is mostly that it expects everything to be on very specific directories and very specific filenames.
