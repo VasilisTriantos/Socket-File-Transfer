@@ -15,6 +15,9 @@ It expecs the file name to be `file_to_send.txt`
 Sends the file size of the file on the directory `/send`
 if the server accepts it then sends the file and closes the connection.
 
+## Socket_utilites.h  Socket_utilites.c
+It contains helper functions and definitions that are used by both the client and the server to handle the common socket operations.
+
 
 ## Files
 - `client.c`: Client-side code
