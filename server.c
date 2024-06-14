@@ -92,7 +92,7 @@ void *handle_client(void *arg) {
 
     ack_handler(client_FD, 'A');
 
-    FILE *file = fopen("../recieve/received_file.txt", "wb"); // Open file for writing in binary mode (Write Binary)
+    FILE *file = fopen("../receive/received_file.txt", "wb"); // Open file for writing in binary mode (Write Binary)
     //error, the folder doesn't exist
     if (file == NULL) {
         printf("File opening failed\n"); // file opening fails
@@ -106,7 +106,7 @@ void *handle_client(void *arg) {
     // Close the file
     fclose(file); // Close the file
     printf("File received and saved.\n"); 
-    printf("file size is: %d\n",file_size);
+    printf("file size is: %zu\n",file_size);
     
     close(client_FD);
     printf("client disconnected\n\n");
