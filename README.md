@@ -7,7 +7,7 @@ This was made as a university project.
 ### Server
 The server checks if there's more than 5gb available for stability reasons. 
 If it has enough space available then it starts listening for client connections and denies any file that would make the operation of the server unsafe. 
-If if everything is fine then the server saves the file on `/recieve` with the name `received_file.txt`
+If if everything is fine then the server saves the file on `/receive` with the name `received_file.txt`
 
 ### Client
 It tries to connect to the server. 
@@ -33,10 +33,11 @@ To compile and run the client and server code, run the following scripts on diff
 ./client_comp.sh
 ./serv_comp.sh
 ```
+They expect you to have a `/compiled` foler and also a `/send` for the Cliend and `/receive` for the Server
 
 ## Tested on:
-This code was run and tested on Arch linux with GCC. I can't guarantee that it will run on Windows or any other linux distro
+This code was run and tested on Linux with GCC. I can't guarantee that it will run on Windows or any other linux distro
 
 
 ## Shortcomings
-The major drawbacks of this implementation is mostly that it expects everything to be on very specific directories and very specific filenames.
+The major drawbacks of this implementation is mostly that it expects everything to be on very specific directories and very specific filenames. Furthermore it also lacks in security
